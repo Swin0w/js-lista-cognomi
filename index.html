@@ -45,17 +45,19 @@
       */
 
       var list = [];
-      var i;
+        alert("Per smettere di inserire cognomi chiudi la pagina o inserisci un cognome con lunghezza inferiore a 1 caratteri!")
+        var cognome = prompt("Dimmi il tuo cognome: ");
 
-        while (cognome.length < 4 ) {
-          alert("Per smettere di inserire cognomi chiudi la pagina o inserisci un cognome con lunghezza inferiore a 4 caratteri!")
-          var cognome = prompt("Dimmi il tuo cognome: ")
-          list[i] = cognome;
-          i++;
+        while (cognome.length > 1 ) {
+          console.log("Check");
+          list.push(cognome);
+          var cognome = prompt("Dimmi il tuo cognome: ");
         }
-        for (i = 0; i < list.length; i++) {
-          list.sort();
-          console.log("In ordine: ", list)
+        console.log(list);
+
+        list.sort();
+        for (var i = 0; i < list.length; i++) {
+          console.log("In ordine: ", "posizione:", (i + 1), list[i]);
         }
 
     </script>
