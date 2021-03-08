@@ -47,13 +47,13 @@
       var list = [];
       var i;
 
-        while (list[i].length < 4 ) {
+        while (cognome.length < 4 ) {
           alert("Per smettere di inserire cognomi chiudi la pagina o inserisci un cognome con lunghezza inferiore a 4 caratteri!")
           var cognome = prompt("Dimmi il tuo cognome: ")
           list[i] = cognome;
           i++;
         }
-        for {i = 0; i < list.length; i++} {
+        for (i = 0; i < list.length; i++) {
           list.sort();
           console.log("In ordine: ", list)
         }
